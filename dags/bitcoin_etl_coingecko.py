@@ -74,7 +74,7 @@ def fetch_bitcoin_etl_coingecko():
     engine = hook.get_sqlalchemy_engine()
     
     # O index=True salva a coluna 'time' como chave primária/coluna de tempo
-    df_daily.to_sql("bitcoin_history_thgoliveira", con=engine, if_exists="append", index=True)
+    df_daily.to_sql("bitcoin_history_thiagooliveira", con=engine, if_exists="append", index=True)
 
 @dag(
     default_args=DEFAULT_ARGS,
